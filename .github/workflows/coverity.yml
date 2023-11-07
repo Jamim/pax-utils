@@ -1,7 +1,7 @@
 # GitHub actions workflow.
 # https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions
 
-# https://scan.coverity.com/projects/gentoo-pax-utils
+# https://scan.coverity.com/projects/mim-pax-utils-fork
 name: Coverity Scan
 
 on:
@@ -15,5 +15,5 @@ jobs:
     - uses: actions/checkout@v2
     - uses: vapier/coverity-scan-action@v1
       with:
-        email: vapier@gentoo.org
+        email: aliaksei.urbanski@gmail.com
         token: ${{ secrets.COVERITY_SCAN_TOKEN }}
